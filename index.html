@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050505">
+    <title>anas-khamkar | terminal</title>
+    <meta name="description" content="Interactive terminal portfolio of Anas Khamkar — cybersecurity enthusiast focused on vulnerability assessment, penetration testing, and network security.">
+    <meta name="author" content="Anas Khamkar">
+    <meta name="keywords" content="Anas Khamkar, cybersecurity, ethical hacking, VAPT, terminal portfolio, penetration testing">
+    <meta property="og:title" content="Anas Khamkar — terminal portfolio">
+    <meta property="og:description" content="Cybersecurity enthusiast. Type a command to explore skills, projects, and contact.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="phosphor">
+    <div class="terminal" role="application" aria-label="Anas Khamkar interactive terminal portfolio">
+        <header class="titlebar">
+            <div class="dots" aria-hidden="true">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            </div>
+            <div class="title-mark" aria-hidden="true">AK</div>
+            <h1 class="titlebar-text">root@anas — terminal portfolio</h1>
+            <div class="titlebar-actions">
+                <button type="button" class="skip-btn" id="skip-boot">skip animation</button>
+                <div class="theme-switcher" role="group" aria-label="Color theme">
+                    <button type="button" class="theme-btn t-phosphor is-active" data-theme="phosphor" title="phosphor" aria-label="Phosphor green theme"></button>
+                    <button type="button" class="theme-btn t-dark" data-theme="dark-matter" title="dark matter" aria-label="Dark matter theme"></button>
+                    <button type="button" class="theme-btn t-neo" data-theme="neo" title="neo" aria-label="Neo theme"></button>
+                    <button type="button" class="theme-btn t-chalk" data-theme="chalkboard" title="chalkboard" aria-label="Chalkboard theme"></button>
+                </div>
+            </div>
+        </header>
+
+        <div class="output" id="output" tabindex="-1" aria-live="polite"></div>
+
+        <div class="suggest-bar" id="suggest-bar" hidden></div>
+
+        <form class="input-area" id="command-form" autocomplete="off">
+            <label class="input-prompt" for="cmd-input">
+                <span class="prompt-user">root</span>
+                <span class="prompt-at">@</span>
+                <span class="prompt-host">anas</span>
+                <span class="prompt-path">:~</span>
+                <span class="prompt-sym">$</span>
+            </label>
+            <input
+                id="cmd-input"
+                type="text"
+                enterkeyhint="enter"
+                autocomplete="off"
+                autocorrect="off"
+                autocapitalize="off"
+                spellcheck="false"
+                placeholder="type a command or click one above..."
+                aria-label="Terminal command"
+            >
+            <span class="cursor" aria-hidden="true"></span>
+        </form>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/commands.js"></script>
+    <script src="js/terminal.js"></script>
+</body>
+</html>
