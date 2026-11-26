@@ -46,11 +46,48 @@ const PORTFOLIO = {
 
     certifications: [
         {
-            name: "Certified Ethical Hacker (CEH) — learning / knowledge track",
-            issuer: "[Add verified issuing body]",
-            date: "[Add verified date]",
-            status: "CEH-related knowledge and coursework."
-        }
+            name: "Certified Ethical Hacker (CEH)",
+            issuer: "NETTECH INDIA",
+            date: "06/03/2026",
+            status: "Completed Certified Ethical Hacking training with hands-on cybersecurity fundamentals."
+        },
+        {
+            name: "CCNA",
+            issuer: "NETTECH INDIA",
+            date: "03/11/2025",
+            status: "Completed CCNA training covering networking fundamentals, IP addressing, routing, switching, and network troubleshooting."
+        },
+        {
+            name: "Active Directory Pentesting",
+            issuer: "NETTECH INDIA",
+            date: "16/06/2026",
+            status: "Completed Active Directory training covering domain management, users and groups, Group Policy, authentication, and access control."
+        },
+        {
+            name: "Network Pentesting",
+            issuer: "NETTECH INDIA",
+            date: "19/05/2026",
+            status: "Completed network penetration testing training covering network reconnaissance, port scanning, service enumeration, vulnerability assessment, and security testing."
+        },
+        {
+            name: "Web Application Pentesting",
+            issuer: "NETTECH INDIA",
+            date: "17/04/2026",
+            status: "Completed web application security training covering OWASP Top 10, vulnerability assessment, authentication testing, SQL injection, XSS, IDOR, and Burp Suite."
+        },
+        {
+            name: "Kali Linux",
+            issuer: "NETTECH INDIA",
+            date: "01/12/2025",
+            status: "Completed Kali Linux training covering Linux fundamentals, command-line operations, system administration, networking tools, and cybersecurity utilities."
+        },
+        {
+            name: "API Pentesting",
+            issuer: "NETTECH INDIA",
+            date: "21/08/2026",
+            status: "Completed API security training covering REST APIs, authentication and authorization testing, JWT security, broken access control, IDOR, and API vulnerability assessment."
+        },
+        
     ],
 
     skills: {
